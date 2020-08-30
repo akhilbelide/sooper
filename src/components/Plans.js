@@ -39,7 +39,6 @@ class Plans extends Component{
     }
     
     clickHand=(index)=>{
-        console.log('hello')
         let new_def=this.state.def
         new_def.map((i,ind) => {
             if(ind===index){
@@ -61,7 +60,7 @@ class Plans extends Component{
                     Object.values(plan).map((i,index) => {
                         return(
                             <div className={this.state.def[index]===1?'Sel_Child-div':'Child-div'} key={index} onClick={()=>this.clickHand(index)}>
-                                {console.log(i)}
+                               
                                     {this.state.def[index]===1 &&  
                                      <div >
                                          <img src={require("../tick.png")} alt="Loading.." width="20px" height="20px" style={{position:'absolute',left:-10,top:-10}}/>
@@ -91,7 +90,7 @@ class Plans extends Component{
                                         {
                                             i.description.map((item,k) => {
                                                 return(
-                                                    <div className='Desc-P'>
+                                                    <div className='Desc-P' key={k}>
                                                 <p style={{marginLeft:'20px',color:'#8c8c90'}} key={k}> &#9658;   {item}</p>
                                                 </div>
                                                 )
