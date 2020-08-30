@@ -1,0 +1,222 @@
+.Parent-div{
+    width:60%;
+    margin-left: 20%;
+    margin-top:5%;
+    display:flex;
+    flex-wrap: wrap;
+    background-color: 	#1a1927;
+    
+}
+
+.Child-div{
+    display: flex;
+    position:relative;
+    flex:1 0 20%;
+    flex-direction: column;
+    background-color:#1f1f2d ;
+    text-align: center;
+    padding:20px;
+    margin:5px;
+    align-items: center;
+    border: #25252f;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    height:500px;
+}
+
+.Sel_Child-div{
+    display: flex;
+    position:relative;
+    flex:1 0 20%;
+    flex-direction: column;
+    background-color:#1f1f2d ;
+    text-align: center;
+    padding:20px;
+    margin:5px;
+    align-items: center;
+    
+    height:500px;
+    border: #fc3263;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+.NameP{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1;
+}
+
+.PriceP{
+    color:#fc3263;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1;
+    font-size:xx-large;
+    
+}
+
+.Desc-P{
+    border: rgb(94, 89, 89);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    box-sizing: border-box;
+    border-radius: 5%;
+    font-size: small;
+    font-family: 'Roboto', sans-serif;
+}
+.Buttn{
+    display:flex;
+    background-color: #ccc;
+    margin-top:auto;
+    width:100%;
+    margin-bottom: 15px;
+    background-color: #1f1f2d;
+    color:#fc3263;
+    border: rgb(94, 89, 89);
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+
+
+.Text-P{
+    font-size:small;
+    font-family: 'Roboto', sans-serif;
+    color:#8c8c90;
+    position: absolute;
+    top:25%;
+    
+}
+
+.Sel_Buttn{
+    display:flex;
+    background-color: #ccc;
+    margin-top:auto;
+    width:100%;
+    margin-bottom: 15px;
+    background-image: -moz-linear-gradient(0deg, rgb(146, 53, 212) 0%, rgb(255, 51, 101) 100%) !important;
+    background-image: -webkit-linear-gradient(0deg, rgb(146, 53, 212) 0%, rgb(255, 51, 101) 100%) !important;
+    background-image: -ms-linear-gradient(0deg, rgb(146, 53, 212) 0%, rgb(255, 51, 101) 100%) !important;
+    color: #fff !important;
+   
+}
+
+.Desc{
+    text-align: left;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    margin:20px
+    
+}
+
+
+@media screen and (max-width:300px){
+
+    .Tick{
+        position:absolute;
+        left:-10;
+        top:-10;
+        
+    }
+    .Desc{
+        display:none
+    }
+
+    .Buttn{
+        display:none
+    }
+    .Sel_Buttn{
+        display:none;
+    }
+
+    .Parent-div{
+        width:90%;
+        margin-left:5%;
+        margin-right:5%;
+        margin-top:5%;
+    }
+
+    .Child-div{
+        height:auto;
+        display:flex;
+        position: relative;
+        padding:0px;
+        width:800px;
+    }
+
+    .Sel_Child-div{
+        height:auto;
+        display:flex;
+        position: relative;
+        padding:0px;
+        width:800px;
+        border: #fc3263;
+        border-width: 1px;
+        border-style: solid;
+        box-sizing: border-box;
+
+
+    }
+
+    .Both{
+        display:flex;
+        flex-direction: row;
+      
+    }
+
+    .PriceP{
+        font-size: small;
+        padding:5px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        
+    }
+
+    .Price{
+       
+        justify-content: right;
+        width:100px;
+        padding:5px ;
+        height:75px;
+        line-height: 75px;
+        text-align:right;
+    }
+
+
+    .NameP{
+        text-align: left;
+        padding:5px;
+        font-size: small;
+
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        
+    }
+
+    .Name{
+        width:100px;
+        padding:5px ;
+
+        height:75px;
+        line-height: 75px;
+        text-align:left;  
+    }
+
+    .Text-P{
+        font-size:xx-small;
+        font-family: 'Roboto', sans-serif;
+        color:#8c8c90;
+        position: absolute;
+        top:50%;
+       right:0
+        
+    }
+}
